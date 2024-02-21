@@ -9,20 +9,21 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# ZSH Config
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
 COMPLETION_WAITING_DOTS="true"
-
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting archlinux systemd nvm systemadmin safe-paste)
-
 source $ZSH/oh-my-zsh.sh
 
+# Rust config
+source $HOME/.cargo/env
+
+# Bob config
 PATH="$PATH:/home/noella/.local/share/bob/nvim-bin"
 alias vim=nvim
 export EDITOR=$(where nvim)
 
-export LANG=en_US.UTF-8
-
+# NVM Config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
