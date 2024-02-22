@@ -5,11 +5,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Paste Configs
 mkdir -p $XDG_CONFIG_HOME/alacritty
-cp -r ./alacritty $XDG_CONFIG_HOME/alacritty
+cp -r ./alacritty/* $XDG_CONFIG_HOME/alacritty
 mkdir -p $XDG_CONFIG_HOME/nvim
-cp -r ./nvim-conf $XDG_CONFIG_HOME/nvim
+cp -r ./nvim-conf/* $XDG_CONFIG_HOME/nvim
 mkdir -p $XDG_CONFIG_HOME/tmux
-cp -r ./tmux $XDG_CONFIG_HOME/tmux
+cp -r ./tmux/* $XDG_CONFIG_HOME/tmux
 cp ./zsh/.zshenv $HOME/.zshenv
 cp ./zsh/.p10k.zsh $HOME/.p10k.zsh
 mkdir -p $XDG_CONFIG_HOME/zsh
