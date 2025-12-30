@@ -41,4 +41,7 @@ nvm install --lts
 nvm use --lts
 nvm alias default lts/*
 
+# Install TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 env zsh -l
